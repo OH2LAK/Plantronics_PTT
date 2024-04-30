@@ -2,9 +2,11 @@
 Small Python program to interface a Plantronics/Poly PTT USB headset to a serial port to control FlexRadio SmartSDR PTT
 
 The program has been developed with Plantronics/Poly SHS2355-11 PTT headset but it can be easily adopted to any device with a HID interface.
+
 <p align="center">
-![Plantronics SHS 2355-11 USB PTT headset](Plantronics_SHS2355-11.png)
+<img height="250" src="https://github.com/OH2LAK/Plantronics_PTT/blob/main/Plantronics_SHS2355-11.png">
 </p>
+
 ## Why
 Flexradio SmartSDR application PTT can be controlled either via CAT or via serial port signal RTS or DTR using the SmartSDR CAT program. In search of a handy PTT device to have possibility of controlling the PTT otherwise than mouse clicking the MOX button on the SmartSDR application, I started to investigate Plantronics SHS2355-11 PTT USB headsets which are used in public safety dispatch centers, etc. They provide a PTT pushbutton as seen in the picture, and also a high-quality USB sound device.
 
@@ -22,13 +24,12 @@ With my very bad coding skills and the huge help of ChatGPT, this program was cr
 ## Prerequisites
 With Flexradio SmartSDR CAT, the PTT port needs to be configured as the program controls the PTT through this port. Regarding creating or configuring a PTT port within SmartSDR CAT, please refer to the SmartSDR CAT manual [SmartSDR CAT User Guide v3.x](https://www.flexradio.com/documentation/smartsdr-cat-user-guide-pdf/)
 
-![SmartSDR CAT main view](SmartSDR_CAT.png){: style="height:83px"}
-
 In my case, the PTT port is COM5, the signal is RTS and the active state is LOW
 
-![SmartSDR CAT PTT port edit screen](SmartSDR_CAT-Edit_PTT_port.png){: style="height:83px"}
-
-
+<p align="center">
+<img height="400" src="https://github.com/OH2LAK/Plantronics_PTT/blob/main/SmartSDR_CAT.png">
+<img height="400" src="https://github.com/OH2LAK/Plantronics_PTT/blob/main/SmartSDR_CAT-Edit_PTT_port.png">
+</p>
 
 ## Usage
 
@@ -71,3 +72,5 @@ PTT Button Control started. Serial port: COM5, Signal: RTS, Polarity: LOW
 
 Program stopped.
 ```
+## Disclaimer & License
+I give no support or help if you struggle to get this program to work. I have not investigated or thought any security concerns of the program, thus it has some internal housekeeping so that the PTT state should clear out if the program hangs. Then of course the PTT can be switched off from the SmartSDR application. I selected the MIT license for the program as it gives everybody full freedom to do whatever they want with the code. Hope the program is useful for someone!
