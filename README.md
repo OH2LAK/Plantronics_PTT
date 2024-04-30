@@ -73,4 +73,8 @@ PTT Button Control started. Serial port: COM5, Signal: RTS, Polarity: LOW
 Program stopped.
 ```
 ## Disclaimer & License
-I give no support or help if you struggle to get this program to work. I have not investigated or thought any security concerns of the program, thus it has some internal housekeeping so that the PTT state should clear out if the program hangs. Then of course the PTT can be switched off from the SmartSDR application. I selected the MIT license for the program as it gives everybody full freedom to do whatever they want with the code. Hope the program is useful for someone!
+I give no support or help if you struggle to get this program to work, ask Google or ChatGPT as I did many times while building the code.
+
+I have not investigated or thought any security concerns of the program, thus it has some internal housekeeping so that the PTT state should clear out if the program hangs. Then of course the PTT can be switched off from the SmartSDR application.
+
+I selected the MIT license for the program as it gives everybody full freedom to do whatever they want with the code. Hope the program is useful for someone! 73, Erik OH2LAK
